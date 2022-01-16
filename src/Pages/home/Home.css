@@ -1,0 +1,28 @@
+.home__container {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.gameAndSettings {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+.game {
+  flex: 8;
+  max-width: 1050px;
+}
+
+.settings {
+  flex: 4;
+  margin-top: 10px;
+  margin-right: 110px;
+  max-width: 200px;
+  display: flex;
+  justify-items: center;
+}
+.pracAndFriends {
+  display: flex;
+}

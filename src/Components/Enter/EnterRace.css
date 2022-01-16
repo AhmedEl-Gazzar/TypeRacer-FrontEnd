@@ -1,0 +1,65 @@
+.game {
+  margin-left: 25px;
+}
+
+.game__title {
+  color: #005894;
+  font-size: 120%;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+.game__subheading {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #7190a5;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 60%;
+}
+
+.game__enterRace {
+  height: 16em;
+  width: 100%;
+  background-image: url(../../images/banner.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  margin-bottom: 1.5em;
+  padding: 1.25em 0em 0em 1em;
+  border-color: #dddddd;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1em;
+  background-color: #fafafa;
+}
+
+.game__enterRace > h3 {
+  font-family: "Lato", sans-serif;
+  color: gray;
+  font-weight: bold;
+}
+
+.button {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4caf50;
+  font-weight: bold;
+  font-size: 1em;
+  width: auto;
+  height: auto;
+  white-space: nowrap;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 16%);
+  padding: 15px;
+}
+.button:hover {
+  background-color: #1f8d22;
+  cursor: pointer;
+}
+.arrow {
+  margin-left: 10px;
+}
