@@ -4,7 +4,7 @@ import carImg from "../../images/RedCar.png";
 import BlueCarImg from "../../images/BlueCar.png";
 import "./TypeRacer.css";
 
-const URL = "http://localhost:5000";
+const URL = "https://typeracernodejs.herokuapp.com/";
 
 const socket = io.connect(URL);
 // web socket connection
@@ -74,6 +74,7 @@ function TypeRacer() {
     if (progress < finishLine) {
       setWPM((60 * numWords) / (timer + 1)); //update WPM every second
     }
+    // eslint-disable-next-line
   }, [timer]);
 
   //find number of spaces and set first word as the current word
@@ -102,6 +103,7 @@ function TypeRacer() {
   //run sendPosition everytime player progress futher towards finishline
   useEffect(() => {
     sendPosition(progress);
+    // eslint-disable-next-line
   }, [progress]);
 
   //connect to a room at first render
@@ -129,6 +131,7 @@ function TypeRacer() {
       socket.emit("leaveRoom", roomId);
       socket.off();
     };
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
@@ -141,6 +144,7 @@ function TypeRacer() {
     socket.on("WPM", (WPM) => {
       setP2WPM(WPM);
     });
+    // eslint-disable-next-line
   }, [WPM]);
 
   useEffect(() => {
