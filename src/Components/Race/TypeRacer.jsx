@@ -224,7 +224,7 @@ function TypeRacer() {
 
   return !connected ? (
     // loading state -- other user has not connected yet
-    <h1> Loading...</h1>
+    <h1> Waiting for another player...</h1>
   ) : (
     // race state
     <div className="race">
